@@ -1,0 +1,27 @@
+.projcontainer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+.projectcards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 21px;
+}
+.apps {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.prtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

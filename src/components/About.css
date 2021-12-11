@@ -1,0 +1,68 @@
+.aboutcontainer {
+  border-radius: 10px;
+}
+.abouttitle {
+  font-size: 30px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutdesc {
+  display: flex;
+}
+.aboutright {
+  margin-left: 20px;
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.abtcard {
+  width: 60%;
+  height: 60vh;
+  border-radius: 50px;
+}
+.aboutleft {
+  flex: 1;
+  margin-right: 50px;
+}
+.me {
+  margin-top: 20px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.aboutsub {
+  font-size: 22px;
+  color: black;
+  font-weight: 300;
+}
+.descabt {
+  font-size: 22px;
+  color: black;
+  font-weight: 300;
+}
+@media only screen and (max-width: 600px) {
+  .aboutdesc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .aboutright {
+    display: none;
+  }
+  .aboutleft {
+    margin: 20px;
+  }
+  .aboutsub{
+    font-size: 18px;
+  }
+  .descabt{
+    font-size: 18px;
+  }
+}

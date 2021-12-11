@@ -1,0 +1,36 @@
+.navbarcontainer{
+    
+   display: flex;
+   flex-direction: row;
+   height: 50px;
+   
+
+}
+.Left{
+    margin-left: 10px;
+    margin-top: 10px;
+    flex: 1;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+}
+.Right{
+    margin-top: 10px;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+}
+.itemright{
+    font-size: 15px;
+}
+@media only screen and (max-width: 600px) {
+    .navbarcontainer{
+       color: rgb(98, 107, 107);
+    }
+    .Left{
+        width: auto;
+    }
+   .Right{
+       display: none;
+   } 
+}
