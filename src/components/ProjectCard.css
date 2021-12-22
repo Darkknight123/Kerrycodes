@@ -13,6 +13,8 @@
 .imgcontainer img{
     overflow: hidden;
     height: 200px;
+    align-items: center;
+    justify-content:center;
 }
 .prjbtn{
     display: flex;
@@ -23,14 +25,14 @@
 .git{
     background-color: #0079D0;
     color: white;
-    padding:5px;
     width:100px;
+    cursor: pointer;
 }
 .live{
     background-color: #0079D0;
     color: white;
-    padding:5px;
     width:100px;
+    cursor: pointer;
 }
 p{ 
     font-style: normal;
