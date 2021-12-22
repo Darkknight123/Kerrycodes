@@ -25,3 +25,53 @@
   align-items: center;
   justify-content: center;
 }
+.cardcontainer{
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 5px 10px 8px #888888;
+  border: 2px solid rgb(241, 232, 232);
+  border-radius: 10px;
+}
+
+.cardinfo{
+  margin: 1rem;
+  margin-top: 0.5rem;
+}
+.imgcontainer img{
+  overflow: hidden;
+  height: 200px;
+  align-items: center;
+  justify-content:center;
+}
+.prjbtn{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.git{
+  background-color: #0079D0;
+  color: white;
+  width:100px;
+  cursor: pointer;
+}
+.live{
+  background-color: #0079D0;
+  color: white;
+  width:100px;
+  cursor: pointer;
+}
+p{ 
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 300;
+}
+.cardtle{
+  font: size 12px;
+}
+@media only screen and (max-width:600px){
+  .cardcontainer{
+      margin-top: 15px;
+  }
+
+}

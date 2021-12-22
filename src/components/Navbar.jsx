@@ -8,10 +8,10 @@ function Navbar() {
                 Philip Kerry
             </div>
             <div className="Right">
-                <div className="itemright">About</div>
-                <div className="itemright">Skills</div>
-                <div className="itemright">Projects</div>
-                <div className="itemright">Contact</div>
+                <div className="navhome">About</div>
+                <div className="navskills">Skills</div>
+                <div className="navprojects">Projects</div>
+                <div className="navcontact">Contact</div>
             </div>
         </div>
     )
