@@ -1,18 +1,32 @@
-import React from "react";
+import React, { useRef }  from "react";
 import "./Contact.css";
-//import emailjs from "emailjs-com";
+import emailjs from "emailjs-com";
 import { LinkedIn,Twitter,Instagram, GitHub } from "@mui/icons-material";
 import contact from "../Images/contactme.svg"
 
 
-function Contact() {
+export const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) =>{
+    e.preventDefault();
+
+    emailjs.sendForm('gmail', 'template_fua60be', form.current, 'user_mCye4BlXApUxNsPlBtfQA')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      form.current.reset()
+  }
   return (
     <div className="contactcontainer">
       <h1 className="contattle">Contact Me</h1>
       <div className="contain">
         <div className="topcontainer">
           <div className="formwrapper">
-            <form >
+            <form onSubmit={sendEmail}>
               <label className="label">Name</label>
               <input type="text" name="user_name" />
               <label className="label">Email</label>
@@ -39,4 +53,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+
